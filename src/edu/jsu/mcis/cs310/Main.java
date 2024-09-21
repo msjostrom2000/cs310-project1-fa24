@@ -23,6 +23,8 @@ public class Main {
             JsonArray sections = (JsonArray)jsonOriginal.get("section");
             System.out.println("Sections Found (JSON): " + sections.size());
             
+            String csvTest = schedule.convertJsonToCsvString(jsonOriginal);
+            System.out.println(csvTest);
         }
         catch (Exception e) { e.printStackTrace(); }
             
